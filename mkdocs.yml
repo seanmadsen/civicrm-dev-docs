@@ -5,6 +5,8 @@ site_author: The CiviCRM community
 theme: readthedocs
 markdown_extensions:
   - markdown.extensions.admonition
+extra_javascript:
+  - js/custom.js
 pages:
 - Home: index.md
 - Basics:
