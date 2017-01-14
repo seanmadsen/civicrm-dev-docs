@@ -47,6 +47,8 @@ pages:
 - Core code:
   - Hacking the core: core/hacking.md
   - Architecture: core/architecture.md
+- Best practices:
+  - Commit messages: best-practices/commit-messages.md
 - Miscellaneous:
    - Extension Lifecycle: extend-stages.md
    - Markdown: markdownrules.md

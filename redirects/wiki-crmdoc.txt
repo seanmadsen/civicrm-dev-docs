@@ -2,3 +2,4 @@ Documentation+Infrastructure+Canary develop
 The+developer+community basics/community
 Create+an+Extension extensions/basics
 The+codebase core/architecture
+Git+Commit+Messages+for+CiviCRM best-practices/commit-messages
