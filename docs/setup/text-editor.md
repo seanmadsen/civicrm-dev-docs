@@ -1,82 +1,53 @@
-# IDE Settings to Meet Coding Standards
+# Text editor settings to meet coding standards
 
 Developers can make it easier to create code that meets the CiviCRM
 Coding Standards by configuring their tools to automatically do some
 things for them, such as whitespace formatting.
 
-# Editors
-
-[Atom](#IDESettingstoMeetCodingStandards-Atom) |
-[Emacs](#IDESettingstoMeetCodingStandards-Emacs) |
-[Komodo](#IDESettingstoMeetCodingStandards-Komodo) |
-[NetBeans](#IDESettingstoMeetCodingStandards-NetBeans) |
-[PHPStorm](#IDESettingstoMeetCodingStandards-PHPStorm) | [Sublime
-Text](#IDESettingstoMeetCodingStandards-SublimeText) |
-[vim](#IDESettingstoMeetCodingStandards-vim) | [Zend Studio
-(Eclipse)](#IDESettingstoMeetCodingStandards-ZendStudio(Eclipse))
-
 ## Atom
 
-Make sure *phpcs* is in your path.  Run the following command to add the
-*Drupal* standard (assuming you have
-[Buildkit](https://github.com/civicrm/civicrm-buildkit) installed:
+1. Make sure `phpcs` is in your path.
 
-    phpcs --config-set installed_paths /path/to/buildkit/vendor/drupal/coder/coder_sniffer
+1. Run the following command to add the *Drupal* standard (assuming you have [Buildkit](https://github.com/civicrm/civicrm-buildkit) installed:
 
-If you have [coder](https://github.com/civicrm/coder) installed without
-using Buildkit, use the path to the *coder\_sniffer* directory within
-it.  The result is that you should see "Drupal" among the coding
-standards when you type
+        phpcs --config-set installed_paths /path/to/buildkit/vendor/drupal/coder/coder_sniffer
 
-    phpcs -i
+    - If you have [coder](https://github.com/civicrm/coder) installed without using Buildkit, use the path to the `coder_sniffer` directory within it.  The result is that you should see "Drupal" among the coding standards when you type `phpcs -i`.
 
-Next, install the following packages in Atom:
+1. Install the following packages in Atom: linter, linter-jshint, linter-php, linter-phpcs
 
--   linter
--   linter-jshint
--   linter-php
--   linter-phpcs
+1. In the editor settings, make sure "Soft Tabs" is checked and the "Tab Length" is *2*.
 
-In the editor settings, make sure "Soft Tabs" is checked and the "Tab
-Length" is *2*.
+1. In the settings for the linter-phpcs packages, set the "Code Standard or Config File" as *Drupal*.
 
-In the settings for the linter-phpcs packages, set the "Code Standard or
-Config File" as *Drupal*.
-
-Some other useful packages, in addition to those listed above, include
+Some other useful packages, in addition to those listed above, include:
 atom-autocomplete-php, docblockr, git-control, language-smarty-php, and
 linter-jscs.
 
 ## Emacs
 
-See [http://drupal.org/project/emacs](http://drupal.org/project/emacs)
-
-## Komodo
-
-See
-[http://blog.8bitplateau.net/drupa-code-sniffer-komodo/](http://blog.8bitplateau.net/drupa-code-sniffer-komodo/ "http://blog.8bitplateau.net/drupa-code-sniffer-komodo/")
+See Drupal's [recommended emacs settings](http://drupal.org/project/emacs).
 
 ## NetBeans
 
-Good starting places for NetBeans configuration to Drupal coding
-standards is
-[http://drupal.org/node/1019816](http://drupal.org/node/1019816) and
-[http://drupal.org/node/1420008](http://drupal.org/node/1420008).
+See Drupal's pages on
+[Configuring NetBeans](http://drupal.org/node/1019816) and
+[Netbeans Integration](http://drupal.org/node/1420008).
 
 ## PHPStorm
 
 Create the 'CiviCRM' code styling preference:
 
-1.  Open you current project's properties: File \> Settings
-2.  Create the CiviCRM code styling preference: Code Style \> Manage \>
+1.  Open you current project's properties: File > Settings
+1.  Create the CiviCRM code styling preference: Code Style > Manage >
     Save as, then indicate 'CiviCRM'
-3.  In the 'Code style' sub-menu, select 'PHP', then 'Set from ...' at
-    the far right, Predefined Style \> Drupal (this sets options across
+1.  In the 'Code style' sub-menu, select 'PHP', then 'Set from ...' at
+    the far right, Predefined Style > Drupal (this sets options across
     all tabs of the dialog)
-4.  In the 'Code style' sub-menu, select 'Javascript', then 'Set from
+1.  In the 'Code style' sub-menu, select 'Javascript', then 'Set from
     ...' at the far right, PHP (this replicates all PHP settings to the
     Javascript section)
-5.  Click 'Apply' at the bottom of the screen
+1.  Click 'Apply' at the bottom of the screen
 
 That's it. You can now use this code style on all future CiviCRM-related
 projects. If you are only developing for CiviCRM, you can also copy this
@@ -84,46 +55,39 @@ style to the 'Default' style.
 
 ## Sublime Text
 
-See
-[https://github.com/sirkitree/DrupalCodingStandard](https://github.com/sirkitree/DrupalCodingStandard "https://github.com/sirkitree/DrupalCodingStandard").
+See this
+[Sublime build script](https://github.com/sirkitree/DrupalCodingStandard)
+for running Drupal Code Sniffer.
 
 ## vim
 
-A good starting place for vim configuration to Drupal coding standards
-is [http://drupal.org/node/29325](http://drupal.org/node/29325), and
-also
-[http://echodittolabs.org/drupal-coding-standards-vim-code-sniffer-syntastic-regex](http://echodittolabs.org/drupal-coding-standards-vim-code-sniffer-syntastic-regex).
+See Drupal's page on [Configuring vim](http://drupal.org/node/29325).
 
 ## Zend Studio (Eclipse)
 
 Configure your install as follows:
 
 1.  Open Zend Studio.
-2.  Click Zend Studio \> Preferences...
-3.  Open General \> Editors \> Text Editors.
+2.  Click Zend Studio > Preferences...
+3.  Open General > Editors > Text Editors.
     1.  In Displayed tab width, enter 2.
     2.  Click to enable Insert spaces for tabs.
-
-4.  Open General \> Workspace.
+4.  Open General > Workspace.
     1.  In Text file encoding, enable Other, and select UTF-8.
     2.  In New text file line delimiter, enable Other, and select Unix.
-
-5.  Open PHP \> Code Style \> Code Templates.
+5.  Open PHP > Code Style > Code Templates.
     1.  Download the attachment from this wiki page titled CiviCRM
         codetemplates.xml
     2.  Click Import, select CiviCRM codetemplates.xml from your local
         drive, and Open to upload.
-
-6.  Open PHP \> Code Style \> Formatter.
+6.  Open PHP > Code Style > Formatter.
     1.  Download the attachment from this wiki page titled CiviCRM PHP
         Conventions.xml
     2.  Click Import, select CiviCRM PHP Conventions.xml, and Open to
         upload.
-
-7.  Open PHP \> Editor \> Typing.
-    1.  Disable Close PHP tag (?\>).
-    2.  Enable Add "php"" after PHP start tag (\<?).
-
-8.  Open PHP \> Editor \> Save Actions.
+7.  Open PHP > Editor > Typing.
+    1.  Disable Close PHP tag `?>`.
+    2.  Enable Add "php" after PHP start tag `<?`.
+8.  Open PHP > Editor > Save Actions.
     1.  Enable Remove Trailing Whitespace.
     2.  Choose All Lines.
