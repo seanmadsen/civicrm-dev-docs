@@ -20,7 +20,7 @@ pages:
   - Testing: testing.md
   - Writing Documentation: documentation.md
 - Setup:
-  - Text Editor Settings: setup/text-editor.md
+  - Text Editors: setup/text-editor.md
 - APIv3:
   - API Intro: api/general.md
   - API Usage: api/usage.md
