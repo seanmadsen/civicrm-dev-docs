@@ -150,9 +150,5 @@ HTML+Header+Region framework/region#header
 Chaining api/chaining
 Add-on+Formats extensions/customization-strategies
 IDE+Settings+to+Meet+Coding+Standards tools/phpstorm
-Manual+testing testing/manual
-Dedupe+and+merge+testing testing/manual/#dedupe
-Smart+group+testing testing/manual/#smart-group
-Tarball+installation+testing testing/manual/#tarball
 Contributing+to+CiviCRM+using+GitHub tools/git/#github
 Git+Commit+Messages+for+CiviCRM tools/git/#committing
