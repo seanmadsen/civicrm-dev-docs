@@ -4,14 +4,14 @@ In general, CiviCRM follow's the [Drupal Coding Standards](https://www.drupal.or
 
 ## Continuous integration
 
-Jenkins will automatically check all pull requests for coding standards conformance, and code which does not meet the standards will not be merged. 
+[Jenkins](/tools/jenkins.md) will automatically check all pull requests for coding standards conformance, and code which does not meet the standards will not be merged. 
 
 
 ## Tools
 
-If you have a development site with [buildkit]() you can use [Civilint](/tools/civilint.md) to check your code against CiviCRM's coding standards.
+If you have a development site with [buildkit](/tools/buildkit.md) you can use [Civilint](/tools/civilint.md) to check your code against CiviCRM's coding standards.
 
-You can also [set up your IDE](https://wiki.civicrm.org/confluence/display/CRMDOC/IDE+Settings+to+Meet+Coding+Standards) to lint your code.
+You can also [set up your IDE](/tools/phpstorm.md) to lint your code.
 
 
 ## Improving code conformance
