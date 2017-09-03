@@ -91,16 +91,24 @@ An easy way to do this is:
 1. Run `drush civicrm-upgrade-db` to perform database upgrades
 
 
-## Form an opinion about the fix
-
-* The change should make sense for *all users*.
-* The change should not take users by surprise.
-* Significant changes should add functionality in a generalized way that is configurable.
-
-
 ## Write a review as a comment
 
-Summarize your actions and findings, and recommend specific next steps (e.g. merging or otherwise). In your comment, tag [one of the active contributors](https://github.com/civicrm/civicrm-core/graphs/contributors) (e.g. `@eileenmcnaughton`) so they will see that the PR is ready for further action.
+1. Copy the following markdown into your GitHub comment and use it to evaluate the PR on multiple criteria.
 
+    ```markdown
+    * [ ] It's a worthy pursuit.
+    * [ ] It works as advertised.
+    * [ ] It makes sense for all users.
+    * [ ] It's unlikely to surprise users.
+    * [ ] New code is readable and makes sense.
+    * [ ] It doesn't appear to introduce security vulnerabilities.
+    * [ ] Acceptance criteria are either: (a) not stated, or (b) met.
+    * [ ] Significant new functionality is either: (a) not present, or (b) covered by new unit tests. 
+    * [ ] New documentation is either: (a) not needed, or (b) provided within this PR, or (c) provided in a separate PR which already exists.
+    ```
 
+1. Change `[ ]` to `[x]`, for criteria that are met.
 
+1. Recommend specific next steps (e.g. merging or otherwise).
+
+1. Tag [one of the active contributors](https://github.com/civicrm/civicrm-core/graphs/contributors) (e.g. `@eileenmcnaughton`) so they will see that the PR is ready for further action.
