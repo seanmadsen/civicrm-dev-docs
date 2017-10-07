@@ -241,6 +241,7 @@ pages:
   - Documenting Extensions: documentation/extensions.md
   - Markdown: documentation/markdown.md
   - Style Guide: documentation/style-guide.md
+- Governance: governance.md
 
 
 markdown_extensions:
